@@ -30,18 +30,12 @@ const serverConf = {
     const cryptoJob: CryptoJob = ioc.resolve(Jobs.CryptoJob);
     Schedule.scheduleJob(cryptoJob.getJobCron(), () =>
       cryptoJob.execute([
-<<<<<<< HEAD
         TradingPairs.LUNABUSD,
         TradingPairs.ETHBUSD,
         TradingPairs.THETABUSD,
         TradingPairs.ATOMBUSD,
         TradingPairs.ENJBUSD,
-        TradingPairs.STORJBUSD
-=======
-        TradingPairs.LUNAUSDT,
-        TradingPairs.ETHUSDT,
-        TradingPairs.THETAUSDT,
->>>>>>> fb3a8bc (Updates to make it work)
+        TradingPairs.STORJBUSD,
       ])
     );
     routes(app, ioc);

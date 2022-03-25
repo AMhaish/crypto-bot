@@ -25,7 +25,6 @@ export default (
     );
   });
 
-<<<<<<< HEAD
   app.delete("/bnb-bot/deal", async (req, res, next) => {
     await helpers.handleException(
       logger,
@@ -36,8 +35,6 @@ export default (
     );
   });
 
-=======
->>>>>>> fb3a8bc (Updates to make it work)
   app.post("/bnb-bot/config", async (req, res, next) => {
     await helpers.handleException(
       logger,

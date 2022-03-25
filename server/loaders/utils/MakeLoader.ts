@@ -1,18 +1,5 @@
 import DataLoader from "dataloader";
 
-<<<<<<< HEAD
-=======
-/**
- * Create a data loader for model
- * @param model
- * @param {String} field
- * @param {Number} maxBatchSize
- * @param {Object} loaders
- * @param {Boolean} caseInsensitive - sort results case insensitive
- * @returns {DataLoader<*>}
- */
-
->>>>>>> fb3a8bc (Updates to make it work)
 type MakeLoaderOptions = {
   maxBatchSize?: number;
   manyItems?: boolean;
